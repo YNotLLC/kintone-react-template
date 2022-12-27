@@ -1,5 +1,6 @@
 const path = require("path");
 const root = require("path");
+const autoUploadPlugin = require("./autoUpload");
 
 module.exports = {
   mode: "development",
@@ -51,4 +52,5 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js", ".json"],
   },
   target: "web",
+  plugins: [new autoUploadPlugin()],
 };

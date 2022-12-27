@@ -6,14 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "dev": "webpack serve --open"
+    "dev": "webpack serve --open",
+    "upload": "babel-node --presets @babel/env -r dotenv/config uploader.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/node": "^7.20.7",
+    "@kintone/customize-uploader": "^6.0.22",
+    "@kintone/dts-gen": "^6.1.18",
+    "@kintone/rest-api-client": "^3.2.3",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.10",
+    "dotenv": "^16.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
